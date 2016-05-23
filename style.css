@@ -51,7 +51,7 @@ nav {
     font-weight: 100;
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: rgba(0, 0, 0, 0.21);
+    background-color: rgba(0, 0, 0, 0.4);
     box-shadow: 0 0 5px #fff;
 }
 
@@ -97,7 +97,8 @@ em {
 }
 
 #Gold {
-    background-color: #D7B444;
+    /*background-color: #D7B444;*/
+    background-color: rgba(215, 180, 68, 0.6);
 }
 
 #Gold h1 {
@@ -105,7 +106,8 @@ em {
 }
 
 #Silver {
-    background-color: #93A6B7;
+    /*background-color: #93A6B7;*/
+    background-color: rgba(147, 166, 183, 0.6);
 }
 
 #Silver h1 {
@@ -113,12 +115,13 @@ em {
 }
 
 #Bronze {
-    background-color: #CE5218;
+    /*background-color: #CE5218;*/
+    background-color: rgba(206, 82, 24, 0.6);
     height: 180px;
 }
 
 #Bronze h1 {
-    font-size: 1.7em;
+    font-size: 1.9em;
 }
 
 .BoxSponsorLeft {
@@ -155,8 +158,10 @@ em {
 
 .sbox {
     margin-bottom: 50px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    /*border-top: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);*/
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
     padding: 20px;
     overflow: auto;
     color: #fff;
@@ -171,7 +176,7 @@ em {
     left: 0;
     font-size: 10em;
     /*background-color: rgba(255, 255, 255, 0.5);*/
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     box-shadow: 0 0 5px #fff;
     z-index: 500;
 }
@@ -199,8 +204,20 @@ em {
 }
 
 .RedBack {
-    background-color: #c00000;
+    background-repeat: repeat;
     color: white;
+    background-size: 480px 270px;
+    /*
+    background: 
+    /* top, transparent red, faked with gradient 
+    linear-gradient(
+      rgba(200, 0, 10, 0.5), 
+      rgba(200, 0, 10, 0.5)
+    ),
+    /* bottom, image 
+    url(escheresque_ste.png);
+    */
+    background-image: url(red-pattern-wallpaper-2381-2497-hd-wallpapers.jpg);
 }
 
 
