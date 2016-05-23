@@ -54,7 +54,7 @@ nav {
     background-color: rgba(0, 0, 0, 0.4);
     box-shadow: 0 0 5px #fff;
     position: relative;
-    z-index: 200;
+    z-index: 1000;
 }
 
 nav ul {
