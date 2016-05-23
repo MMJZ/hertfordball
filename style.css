@@ -52,7 +52,6 @@ nav {
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: rgba(0, 0, 0, 0.4);
-    /* box-shadow: 0 0 2px rgba(0,0,0,0.5); */
     position: relative;
     z-index: 1000;
     text-shadow: 0 0 1px white;
@@ -70,11 +69,15 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
+    border-bottom: 1px solid;
+    border-bottom-color: rgba(255,255,255,0);
     color: white;
+    transition: all 0.2s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    border-bottom-color: rgba(255,255,255,0.8);
+    text-shadow: 0 0 1px white, 0 0 1px white;
 }
 
 strong {
