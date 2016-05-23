@@ -48,11 +48,11 @@ nav {
     width: 100%;
     text-align: center;
     font-size: 3em;
-    font-weight: 100;
+    font-weight: 300;
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: rgba(0, 0, 0, 0.4);
-    box-shadow: 0 0 5px #fff;
+    /* box-shadow: 0 0 2px rgba(0,0,0,0.5); */
     position: relative;
     z-index: 1000;
 }
@@ -193,17 +193,20 @@ em {
 
 #MainTitle h1 span {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    box-shadow: 0 0 5px #fff;
+    background-color: rgba(0, 5, 10, 0.7);
+    box-shadow: 0 0 1px rgba(255,255,255,0.5);
+    padding: 0.2em;
     display: inline-block;
+    letter-spacing: 0.15em;
+    text-shadow: 0 0 20px rgba(255,255,255,0.5);
 }
 
 #Footer {
     position: fixed;
     text-shadow: 0px 0px #fff;
-    bottom: 0;
+    bottom: 10px;
+    right: 3px;
     width: 100%;
-    height: 30px;
     font-size: 2em;
     text-align: right;
     padding-right: 10px;
@@ -220,27 +223,16 @@ em {
 }
 
 #FrontImageImage {
-    height: 86%;
-    margin-top: 7%;
+    height: 80%;
+    margin-top: 10%;
 }
 
 .RedBack {
     background-repeat: repeat;
+    background-size: 150px;
     color: white;
-    background-size: 480px 270px;
-    /*
-    background: 
-    /* top, transparent red, faked with gradient 
-    linear-gradient(
-      rgba(200, 0, 10, 0.5), 
-      rgba(200, 0, 10, 0.5)
-    ),
-    /* bottom, image 
-    url(escheresque_ste.png);
-    */
-    background-image: url(red-pattern-wallpaper-2381-2497-hd-wallpapers.jpg);
+    background-image: url(./background2.png);
 }
-
 
 
 #Deet {
