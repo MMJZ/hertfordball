@@ -151,3 +151,15 @@ li:before {
     color: #fff;
     position: relative;
 }
+
+#MainTitle {
+    width: 100%;
+    height: 100%;
+}
+
+#Footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
