@@ -201,12 +201,14 @@ em {
 
 #MainTitle h1 span {
     width: 100%;
-    background-color: rgba(0, 5, 10, 0.7);
-    box-shadow: 0 0 1px rgba(255,255,255,0.5);
-    padding: 0.2em;
+    background-color: rgba(0, 5, 10, 0.6);
+    /*box-shadow: 0 0 1px rgba(255,255,255,0.5);*/
+    /*padding: 0.1em;*/
     display: inline-block;
     letter-spacing: 0.15em;
-    text-shadow: 0 0 20px rgba(255,255,255,0.5);
+    font-weight: 100;
+    /*text-shadow: 0 0 20px rgba(255,255,255,0.5);*/
+    text-shadow: 0 0 5px black;
 }
 
 #Footer {
