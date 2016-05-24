@@ -215,6 +215,7 @@ em {
     text-align: right;
     padding-right: 10px;
     z-index: 1000;
+    font-weight: 200;
 }
 
 #FrontImage {
