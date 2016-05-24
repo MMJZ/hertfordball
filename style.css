@@ -171,6 +171,7 @@ em {
     overflow: auto;
     color: #fff;
     position: relative;
+    z-index: 1000;
 }
 
 #MainTitle {
