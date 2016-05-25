@@ -52,6 +52,7 @@ nav {
     font-weight: 200;
     padding-top: 30px;
     padding-bottom: 30px;
+    display: table;
     background-color: rgba(0, 0, 0, 0.4);
     position: relative;
     z-index: 1000;
@@ -64,8 +65,18 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block;
+    display: table-cell;
+    width: 18%;
+    text-align: center;
+    white-space: nowrap;
     padding: 0 2em;
+}
+
+@media (max-width: 800px) {
+    #nav li {
+        display: block;
+        width: 100%;
+    }
 }
 
 nav ul li a {
