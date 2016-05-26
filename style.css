@@ -78,6 +78,10 @@ nav ul li {
     padding: 0 4%;
 }
 
+nav ul li.show {
+    display: none;
+}
+
 @media only screen and (max-width: 1000px){
     nav {
         padding-top: 0;
