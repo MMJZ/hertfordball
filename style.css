@@ -269,10 +269,13 @@ em {
     padding: 5px;
     font-weight: 200;
     font-size: 2.2em;
-    color: aqua;
+}
+
+#Deet a {
+    color: #aabbff;
     text-decoration: none;
 }
 
-#Deet h3 a:hover {
+#Deet a:hover {
     text-decoration: underline;
 }
