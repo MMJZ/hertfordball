@@ -1,5 +1,4 @@
 body {
-    /*background-color: #C00000;*/
     background-color: #fff;
     font-family: 'Roboto', 'Helvetica Neue', sans-serif;
     list-style-type: armenian;
@@ -118,7 +117,6 @@ em {
 }
 
 #Bronze {
-    /*background-color: #CE5218;*/
     background-color: rgba(206, 82, 24, 1);
     height: 180px;
 }
@@ -157,7 +155,7 @@ em {
 }
 
 .BoxSponsorRight li:before {
-    content: "›"; /* Insert content that looks like bullets */
+    content: "›";
     display: inline-block;
     width: 14px;
     font-weight: 900;
@@ -166,8 +164,6 @@ em {
 
 .sbox {
     margin-bottom: 50px;
-    /*border-top: 1px solid rgba(0, 0, 0, 0.5);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);*/
     border-top: 3px solid white;
     border-bottom: 3px solid white;
     padding: 20px;
@@ -183,10 +179,6 @@ em {
     text-align: center;
     position: fixed;
     top: 0;
-    /* margin-top: 300px; */
-    /* left: 0; */
-    /*background-color: rgba(255, 255, 255, 0.5);*/
-    /* padding-top: 30em; */
     display: table;
     z-index: 500;
 }
@@ -201,12 +193,9 @@ em {
 #MainTitle h1 span {
     width: 100%;
     background-color: rgba(0, 5, 10, 0.6);
-    /*box-shadow: 0 0 1px rgba(255,255,255,0.5);*/
-    /*padding: 0.1em;*/
     display: inline-block;
     letter-spacing: 0.15em;
     font-weight: 100;
-    /*text-shadow: 0 0 20px rgba(255,255,255,0.5);*/
     text-shadow: 0 0 5px black;
 }
 
