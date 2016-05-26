@@ -6,7 +6,7 @@ body {
     font-weight: 200;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1000px){
       body {
           font-size: 80%;
           font-weight: 900;
@@ -73,12 +73,12 @@ nav ul li {
     }
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1000px){
     nav {
         padding-top: 0;
         border-bottom: 1px solid white;
         margin-bottom: 40px;
-    background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.7);
     }
     nav ul li {
         display: block;
@@ -238,7 +238,7 @@ em {
     text-shadow: 0 0 5px black;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1000px){
     #MainTitle {
         height: auto;
         position: relative;
@@ -269,7 +269,7 @@ em {
     font-weight: 200;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1000px){
     #Footer {
         margin-top: 40px;
         position: relative;
@@ -294,7 +294,7 @@ em {
     height: 80%;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1000px){
     #FrontImageImage {
         width: 100%;
     }
@@ -316,7 +316,7 @@ em {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1000px){
       #Deet {
           width: 100%;
       }
