@@ -6,7 +6,7 @@ body {
     font-weight: 200;
 }
 
-@media only screen (max-device-width: 800px){
+@media only screen and (max-device-width: 800px){
       body {
           font-size: 80%;
           font-weight: 900;
