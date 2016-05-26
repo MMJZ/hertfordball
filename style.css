@@ -78,15 +78,10 @@ nav ul li {
     padding: 0 4%;
 }
 
-@media screen and (max-width: 1000px) {
-    nav ul li {
-        padding: 0 2%;
-    }
-}
-
 @media only screen and (max-width: 1000px){
     nav {
         padding-top: 0;
+        padding-bottom: 0;
         border-bottom: 1px solid white;
         margin-bottom: 40px;
         font-size: 4em;
@@ -94,8 +89,17 @@ nav ul li {
     }
     nav ul li {
         display: block;
-        padding-bottom: 40px;
-        padding-top: 40px;
+        opacity: 0;
+        height: 0px;
+        transition: all 1s ease-in-out;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    nav ul li.show {
+        opacity: 1;
+        height: auto;
+        padding-bottom: 20px;
+        padding-top: 20px;
     }
 }
 

@@ -1,14 +1,9 @@
-function expandNav() {
-    document.getElementsByTagName("nav").innerHTML = '<ul><li><a href="index.html">Home</a></li><li><a href="sponsors.html">Sponsors</a></li><li><a href="tickets.html">Tickets</a></li><li><a href="contact.html">Contact</a></li><li><a href="about.html">About</a></li></ul>';
-}
+function thing() {
+    var navItems = document.getElementsByTagName("nav")[0].children[0].children;
 
-function condenseNav() {
-    document.getElementsByTagName("nav").innerHTML = '<ul><li><a onclick="expandNav()">Home</a></li></ul>';
-}
-
-function ready() {
-    if (true) {
-        condenseNav();
-        document.getElementById("Footer").innerHTML = 'site by Antonia Siu &amp; Michael Agius';
+    for (var i = 0; i < navItems.length; i++) {
+        navItems[i].className = "show";
     }
+
+    navItems[0].className = "";
 }
