@@ -8,19 +8,19 @@ body {
 
 @media only screen and (max-width: 1000px){
       body {
-          font-size: 150%;
+          font-size: 80%;
       }
 }
 
 @media only screen and (max-width: 870px){
       body {
-          font-size: 100%;
+          font-size: 70%;
       }
 }
 
 @media only screen and (max-width: 600px){
       body {
-          font-size: 70%;
+          font-size: 65%;
       }
 }
 
@@ -89,12 +89,13 @@ nav ul li {
         padding-top: 0;
         border-bottom: 1px solid white;
         margin-bottom: 40px;
+        font-size: 4em;
         background-color: rgba(0, 0, 0, 0.7);
     }
     nav ul li {
         display: block;
-        padding-bottom: 10px;
-        padding-top: 15px;
+        padding-bottom: 40px;
+        padding-top: 40px;
     }
 }
 
