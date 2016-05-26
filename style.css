@@ -7,12 +7,6 @@ body {
     font-weight: 200;
 }
 
-@media screen and (max-width: 1200px) {
-    body {
-        font-size: 50%;
-    }
-}
-
 * {
     margin: 0 auto;
     padding: 0;
@@ -65,6 +59,12 @@ nav ul {
 nav ul li {
     display: inline-block;
     padding: 0 4%;
+}
+
+@media screen and (max-width: 1000px) {
+    nav ul li {
+        padding: 0 2%;
+    }
 }
 
 nav ul li a {
@@ -228,13 +228,12 @@ em {
     width: 100%;
     height: 100%;
     position: fixed;
-    top: 0;
+    top: 95px;
     z-index: 100;
 }
 
 #FrontImageImage {
     height: 80%;
-    margin-top: 10%;
 }
 
 .RedBack {
@@ -270,4 +269,10 @@ em {
     padding: 5px;
     font-weight: 200;
     font-size: 2.2em;
+    color: aqua;
+    text-decoration: none;
+}
+
+#Deet h3 a:hover {
+    text-decoration: underline;
 }
