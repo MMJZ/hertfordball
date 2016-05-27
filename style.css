@@ -290,6 +290,10 @@ em {
     font-weight: 200;
 }
 
+#FMob {
+    display: none;
+}
+
 @media only screen and (max-width: 1000px){
     #Footer {
         margin-top: 40px;
@@ -300,6 +304,12 @@ em {
         border-bottom: 1px solid white;
         padding-top: 30px;
         padding-bottom: 30px;
+    }
+    #FMob {
+        display: inline;
+    }
+    #FDes {
+        display: none;
     }
 }
 
