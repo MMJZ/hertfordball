@@ -67,6 +67,7 @@ nav {
     z-index: 1000;
     text-shadow: 0 0 1px white;
     letter-spacing: 1px;
+    box-shadow: 0 0 4px white;
 }
 
 nav ul {
