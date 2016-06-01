@@ -288,12 +288,12 @@ em {
         width: auto;
         position: relative;
         display: block;
-        word-spacing: 90%;
         text-align: left;
         padding-left: 5%;
     }
     #MainTitleTitleSpan {
         width: auto;
+        word-spacing: 9999px;
     }
     #MainTitle h1 {
         display: block;
