@@ -71,7 +71,8 @@ nav ul li.show {
         padding-bottom: 0;
         border-bottom: 1px solid white;
         margin-bottom: 40px;
-        font-size: 4em;
+        font-size: 12em;
+        min-height: 130px; !important;
         background-color: rgba(0, 0, 0, 0.7);
         transition: all 0.5s ease-in-out;
     }
@@ -82,12 +83,18 @@ nav ul li.show {
         padding-top: 0;
         opacity: 0;
         transition: all 0.3s ease-in-out;
+        text-align: right;
     }
     nav ul li.show {
         opacity: 1;
         max-height: 10em;
         padding-bottom: 20px;
         padding-top: 20px;
+    }
+    nav img {
+        float: right;
+        height: 90px;
+        width: 90px;
     }
 }
 
@@ -218,7 +225,7 @@ em {
 
 #MainTitle {
     width: 100%;
-    height: 100%;
+    height: 80%;
     text-align: center;
     position: fixed;
     top: 0;
@@ -227,13 +234,12 @@ em {
 }
 
 #MainTitle h1 {
-    width: 100%;
     font-size: 10em;
     display: table-cell;
     vertical-align: middle;
 }
 
-#MainTitle h1 span {
+#MainTitleTitleSpan {
     width: 100%;
     background-color: rgba(0, 5, 10, 0.6);
     display: inline-block;
@@ -242,21 +248,49 @@ em {
     text-shadow: 0 0 5px black;
 }
 
+#MainTitleTicketSpan {
+    display: inline-block;
+    font-weight: 300;
+    width: auto;
+    background-color: rgba(0, 153, 230, 0.7);
+    font-size: 0.5em;
+    box-shadow: 0 0 20px 5px black;
+    border-radius: 10px;
+    text-shadow: 0 0 2px black;
+    color: white;
+    padding: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+#MainTitleTicketSpan:hover {
+    box-shadow: 0 0 20px 8px black;
+    background-color: rgba(0, 153, 230, 0.9);
+}
+
 @media only screen and (max-width: 1000px){
     #MainTitle {
         height: auto;
+        width: auto;
         position: relative;
         display: block;
-        border-top: 1px solid white;
-        border-bottom: 1px solid white;
-        margin: 10px auto;
+        word-spacing: 90%;
+        text-align: left;
+        padding-left: 5%;
+    }
+    #MainTitleTitleSpan {
+        width: auto;
     }
     #MainTitle h1 {
         display: block;
-        font-size: 8em;
+        width: auto;
+        font-size: 14em;
+        letter-spacing: normal;
     }
-    #MainTitle h1 span {
-        background-color: rgba(0, 0, 0, 0.7);
+    #MainTitleTitleSpan {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    #MainTitleTicketSpan {
+        font-size: 0.4em;
     }
 }
 
@@ -278,16 +312,15 @@ em {
 }
 
 @media only screen and (max-width: 1000px){
+    
     #Footer {
-        margin-top: 40px;
+        margin-top: 60px;
         position: relative;
-        text-align: center;
-        background-color: rgba(0, 0, 0, 0.7);
-        border-top: 1px solid white;
-        border-bottom: 1px solid white;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        font-size: 1.5em;
+        text-align: left;
+        width: auto;
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 1.7em;
+        padding-left: 5%;
     }
     #FMob {
         display: inline;
@@ -311,8 +344,12 @@ em {
 }
 
 @media only screen and (max-width: 1000px){
-    #FrontImageImage {
+    /*#FrontImageImage {
         width: 100%;
+    }
+    */
+    #FrontImage {
+        display: none;
     }
 }
 
@@ -335,6 +372,7 @@ em {
 @media only screen and (max-width: 1000px){
       #Deet {
           width: 100%;
+          font-size: 1.5em;
       }
 }
 
