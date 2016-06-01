@@ -189,10 +189,12 @@ em {
         margin: 0 auto;
         position: relative;
         vertical-align: baseline;
+        font-size: 5em;
     }
     .BoxSponsorRight {
         float: none;
         width: 100%;
+        font-size: 3em;
     }
     #Bronze {
         height: auto;
@@ -372,7 +374,7 @@ em {
 @media only screen and (max-width: 1000px){
       #Deet {
           width: 100%;
-          font-size: 1.5em;
+          font-size: 2em;
       }
 }
 
