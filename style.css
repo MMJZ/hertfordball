@@ -71,7 +71,7 @@ nav ul li.show {
         padding-bottom: 0;
         border-bottom: 1px solid white;
         margin-bottom: 40px;
-        font-size: 12em;
+        font-size: 10em;
         min-height: 130px; !important;
         background-color: rgba(0, 0, 0, 0.7);
         transition: all 0.5s ease-in-out;
@@ -83,7 +83,7 @@ nav ul li.show {
         padding-top: 0;
         opacity: 0;
         transition: all 0.3s ease-in-out;
-        text-align: right;
+        text-align: left;
     }
     nav ul li.show {
         opacity: 1;
