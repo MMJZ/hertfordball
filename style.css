@@ -11,6 +11,18 @@ body {
     padding: 0;
 }
 
+@media only screen and (max-width: 1000px){
+    body {
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    body {
+        font-size: 60%;
+    }
+}
+
 #Header {
     text-align: center;
     font-size: 4em;
@@ -29,7 +41,7 @@ body {
     padding-top: 50px;
     padding-bottom: 2em;
     font-weight: 300;
-    font-size: 3em;
+    font-size: 3.3em;
 }
 
 #Container {
@@ -189,12 +201,10 @@ em {
         margin: 0 auto;
         position: relative;
         vertical-align: baseline;
-        font-size: 5em;
     }
     .BoxSponsorRight {
         float: none;
         width: 100%;
-        font-size: 3em;
     }
     #Bronze {
         height: auto;
@@ -261,12 +271,15 @@ em {
     text-shadow: 0 0 2px black;
     color: white;
     padding: 20px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 #MainTitleTicketSpan:hover {
-    box-shadow: 0 0 20px 8px black;
-    background-color: rgba(0, 153, 230, 0.9);
+    box-shadow: 0 0 20px 8px white;
+    /*background-color: rgba(0, 153, 230, 1);*/
+    background-color: rgba(255,255,255,0.9);
+    color: rgb(0, 153, 230);
+    text-shadow: none;
 }
 
 @media only screen and (max-width: 1000px){
@@ -296,6 +309,12 @@ em {
     }
 }
 
+@media only screen and (max-width: 890px){
+    #MainTitleTitleSpan {
+        letter-spacing: 0;
+    }
+}
+
 #Footer {
     position: fixed;
     text-shadow: 0px 0px #fff;
@@ -321,7 +340,6 @@ em {
         text-align: left;
         width: auto;
         background-color: rgba(0, 0, 0, 0);
-        font-size: 1.7em;
         padding-left: 5%;
     }
     #FMob {
@@ -374,7 +392,7 @@ em {
 @media only screen and (max-width: 1000px){
       #Deet {
           width: 100%;
-          font-size: 2em;
+          font-size: 1.5em;
       }
 }
 
