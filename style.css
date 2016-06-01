@@ -6,24 +6,6 @@ body {
     font-weight: 200;
 }
 
-@media only screen and (max-width: 1000px){
-      body {
-          font-size: 110%;
-      }
-}
-
-@media only screen and (max-width: 870px){
-      body {
-          font-size: 90%;
-      }
-}
-
-@media only screen and (max-width: 600px){
-      body {
-          font-size: 80%;
-      }
-}
-
 * {
     margin: 0 auto;
     padding: 0;
@@ -305,6 +287,7 @@ em {
         border-bottom: 1px solid white;
         padding-top: 30px;
         padding-bottom: 30px;
+        font-size: 1.5em;
     }
     #FMob {
         display: inline;
