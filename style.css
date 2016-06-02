@@ -264,24 +264,24 @@ em {
     display: inline-block;
     font-weight: 300;
     width: auto;
-    background-color: rgba(0, 153, 230, 0.7);
+    background-color: rgba(0, 153, 230, 0.8);
     font-size: 0.5em;
     border: 1px solid white;
     box-shadow: 0 0 10px black;
     border-radius: 10px;
     text-shadow: 0 0 2px black;
     color: white;
-    padding: 20px;
+    padding: 10px 20px;
     transition: all 0.2s ease-in-out;
+    display: none;
 }
 
 #MainTitleTicketSpan:hover {
     box-shadow: 0 0 20px 8px white;
-    /*background-color: rgba(0, 153, 230, 1);*/
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,1);
     color: rgb(0, 153, 230);
     text-shadow: none;
-    border: none;
+    border: 1px solid black;
 }
 
 @media only screen and (max-width: 1000px){
