@@ -84,7 +84,7 @@ nav ul li.show {
         border-bottom: 1px solid white;
         margin-bottom: 40px;
         font-size: 10em;
-        min-height: 130px; !important;
+        min-height: 130px !important;
         background-color: rgba(0, 0, 0, 0.7);
         transition: all 0.5s ease-in-out;
     }
