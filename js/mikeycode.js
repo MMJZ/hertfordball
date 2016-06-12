@@ -20,12 +20,12 @@ var MikeyCode = function (callback) {
 				obj["e" + type + fn] = fn;
 				obj[type + fn] = function () {
 					obj["e" + type + fn](window.event, ref_obj);
-				}
+				};
 				obj.attachEvent("on" + type, obj[type + fn]);
 			}
 		},
 		input: "",
-		pattern: "10910510710112110511511610410198101115116",
+		pattern: "7773756989738384726966698384",
 		load: function (link) {
 			this.addEvent(document, "keydown", function (e, ref_obj) {
 				if (ref_obj) mikeycode = ref_obj; // IE
