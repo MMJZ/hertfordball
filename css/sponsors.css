@@ -32,6 +32,7 @@
           justify-content: flex-end;
   -webkit-box-align: end;
       -ms-flex-align: end;
+  -webkit-align-items: flex-end;
           align-items: end;
 
   width: 12em;
