@@ -4,6 +4,17 @@ header {
 
   background-color: rgba(11, 150, 120, 0.05);
   border-bottom: 5px solid rgba(11,150,120,0.25);
+  position: relative;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: url('../imgs/foggy_birds/foggy_birds.png');
+  background-size: 200px;
+  filter: blur(0.5px);
 }
 
 nav {
