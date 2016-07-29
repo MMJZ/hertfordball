@@ -6,9 +6,9 @@ html, body {
 }
 
 body {
-  background-image: url('./imgs/foggy_birds/foggy_birds.png');
+  background-image: url('../imgs/foggy_birds/foggy_birds.png');
   background-repeat: repeat;
   background-size: 200px;
-  
+
   font-family: Roboto, 'Helvetica Neue', sans-serif;
 }

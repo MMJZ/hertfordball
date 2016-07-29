@@ -4,7 +4,10 @@
         <title>Hertford Ball Contact</title>
         <meta charset="UTF-8">
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100italic,100,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="./style.css" type="text/css">
+        <link rel="stylesheet" href="./css/style.css" type="text/css">
+        <link rel="stylesheet" href="./css/menu.css" type="text/css">
+
+        <!-- icons -->
         <link rel="apple-touch-icon" sizes="57x57" href="./icons/apple-touch-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="./icons/apple-touch-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="./icons/apple-touch-icon-72x72.png">
@@ -24,9 +27,9 @@
         <meta name="msapplication-TileColor" content="#b91d47">
         <meta name="msapplication-TileImage" content="./icons/mstile-144x144.png">
         <meta name="theme-color" content="#b81818">
-        <script src="menu.js" type="text/javascript"></script>
-        <script src="konami.js" type="text/javascript"></script>
 
+        <script src="js/menu.js" type="text/javascript"></script>
+        <script src="js/konami.js" type="text/javascript"></script>
         <script>
 
             //var easter_egg = new Konami(function() { alert('Konami code!')});
@@ -36,20 +39,20 @@
         </script>
 
     </head>
-    <body class="RedBack">
-
-        <div id="Container">
-
+    <body>
+        <header>
             <nav>
                 <ul>
-                    <li onclick="thing()" class="show">Menu</li>
+                    <li id="menu" onclick="thing()" class="show"><img src="imgs/menu512.png" alt="Menu"></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="sponsors.html">Sponsors</a></li>
                     <li><a href="tickets.html">Tickets</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
+        </header>
+
+        <div id="Container">
 
             <div id="Deet">
                 <h1>President</h1>
@@ -120,6 +123,14 @@
                 <h2>Michael Agius</h2>
                 <h3><a href="mailto:health_safety@hertfordball.co.uk">
                     health_safety&#64;hertfordball.co.uk
+                </a></h3>
+            </div>
+
+            <div id="Deet">
+                <h1>Tech Director</h1>
+                <h2>Michael Agius</h2>
+                <h3><a href="mailto:nerd@michaelagius.uk">
+                    nerd&#64;michaelagius.uk
                 </a></h3>
             </div>
 

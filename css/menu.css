@@ -49,6 +49,9 @@ nav ul a:hover {
   cursor: pointer;
 }
 
+#menu img {
+  width: 70px;
+}
 
 @media all and (min-width: 1000px) {
   nav ul{
