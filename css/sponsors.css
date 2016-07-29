@@ -1,0 +1,104 @@
+#Title h1 {
+  text-align: center;
+  font-weight: 300;
+  margin-top: 1.5em;
+}
+
+.sbox {
+  margin: 2em;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  border-radius: 2px;
+  
+  font-weight: 300;
+  color: #222;
+}
+
+.BoxSponsorLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+  
+  width: 12em;
+  color: #333;
+}
+
+.BoxSponsorLeft p {
+  margin: 0;
+  padding: 0;
+  
+  font-size: 1.5em;
+}
+
+.BoxSponsorLeft h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.BoxSponsorRight {
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BoxSponsorRight ul {
+  margin: 0;
+}
+
+.BoxSponsorRight li {
+  padding: 0.25em 0.2em;
+  list-style-type: circle ;
+}
+
+#Gold {
+  background-color: #EDD35F;
+}
+
+#Gold h1 {
+  font-size: 5em;
+  color: #8C7611;
+}
+
+#Silver {
+  background-color: silver;
+}
+
+#Silver h1 {
+  font-size: 5em;
+  color: #555;
+}
+
+#Bronze {
+  background-color: #CC9658;
+}
+
+#Bronze h1 {
+  font-size: 4em;
+  color: #7D4C14;
+}
+
+.Deet {
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+@media all and (max-width: 950px) {
+  .sbox {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .BoxSponsorLeft {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+  
+  .BoxSponsorRight {
+    max-width: 100%;
+  }
+}
