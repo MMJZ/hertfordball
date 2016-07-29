@@ -5,7 +5,7 @@
 }
 
 .sbox {
-  margin: 2em;
+  margin: 2em auto;
   padding: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,6 +17,7 @@
 
   font-weight: 300;
   color: #222;
+  max-width: 60em;
 }
 
 .BoxSponsorLeft {
@@ -32,8 +33,7 @@
           justify-content: flex-end;
   -webkit-box-align: end;
       -ms-flex-align: end;
-  -webkit-align-items: flex-end;
-          align-items: end;
+          align-items: flex-end;
 
   width: 12em;
   color: #333;
