@@ -1,9 +1,10 @@
 function thing() {
-    var navItems = document.getElementsByTagName("nav")[0].children[0].children;
+    var navItems = document.querySelectorAll('nav ul li');
 
+    var newClass = navItems[1].className === 'show' ? '' : 'show';
     for (var i = 0; i < navItems.length; i++) {
-        navItems[i].className = "show";
+        navItems[i].className = newClass;
     }
 
-    navItems[0].className = "";
+    navItems[0].className = '';
 }
