@@ -4,6 +4,10 @@
   margin-top: 1.5em;
 }
 
+main {
+  margin: 2em;
+}
+
 .sbox {
   margin: 2em auto;
   padding: 2em;
@@ -102,7 +106,10 @@
 
 .Deet {
   margin: 0 auto;
+  padding: 1em 2em;
   margin-bottom: 2em;
+  max-width: 60em;
+  width: auto;
 }
 
 @media all and (max-width: 950px) {
