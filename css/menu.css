@@ -14,7 +14,8 @@ header::before {
   top: 0; left: 0; bottom: 0; right: 0;
   background: url('../imgs/foggy_birds/foggy_birds.png');
   background-size: 200px;
-  filter: blur(0.5px);
+  -webkit-filter: blur(0.5px);
+          filter: blur(0.5px);
 }
 
 nav {
@@ -25,8 +26,13 @@ nav ul {
   text-align: center;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 nav ul li {
@@ -47,6 +53,8 @@ nav ul li a {
   outline: none;
   display: block;
   padding: 0.4em 1em;
+
+  -webkit-transition: 0.2s all ease-in-out;
 
   transition: 0.2s all ease-in-out;
 }
@@ -69,9 +77,17 @@ nav ul a:hover {
 
 @media all and (min-width: 1000px) {
   nav ul{
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
   }
 
   nav ul li {

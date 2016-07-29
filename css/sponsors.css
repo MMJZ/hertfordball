@@ -7,20 +7,33 @@
 .sbox {
   margin: 2em;
   padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 2px;
-  
+
   font-weight: 300;
   color: #222;
 }
 
 .BoxSponsorLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: end;
-  
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+
   width: 12em;
   color: #333;
 }
@@ -28,7 +41,7 @@
 .BoxSponsorLeft p {
   margin: 0;
   padding: 0;
-  
+
   font-size: 1.5em;
 }
 
@@ -39,9 +52,15 @@
 
 .BoxSponsorRight {
   max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .BoxSponsorRight ul {
@@ -87,17 +106,31 @@
 
 @media all and (max-width: 950px) {
   .sbox {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
   }
-  
+
   .BoxSponsorLeft {
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
     margin-bottom: 2em;
   }
-  
+
   .BoxSponsorRight {
     max-width: 100%;
   }
