@@ -4,7 +4,6 @@ body, html {
 
 body {
     font-size: 62.5%;
-    font-family: Parisiene;
 }
 
 * {
@@ -75,16 +74,16 @@ body {
 #group1 img {
     height: 100vh;
 }
-#group1 h1 {
-    float: right;
-    font-family: 'Alex Brush', cursive;
+#group1 p {
+    font-family: 'Josefin Slab', serif;
     font-weight: 100;
-    top: 30%;
-    right: 15%;
+    top: 20%;
+    right: 5%;
+    letter-spacing: 0.2em;
     position: absolute;
     font-size: 5em;
-    text-shadow: 3px 3px 2px #ccc;
-    text-align: center;
+    color: #555;
+    text-align: right;
 }
 
 #group2 {
@@ -137,9 +136,18 @@ body {
 #logo {
     position: absolute;
     left: 30%;
-    float: left;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
+#foottop {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Roboto;
+    padding-top: 10px;
+    font-weight: 100;
+    z-index: 1000;
+}
