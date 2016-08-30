@@ -1,0 +1,166 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+}
+
+.fspread {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-weight: 200;
+}
+
+.fspread div {
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+.newindextitle {
+    font-family: 'Cormorant Unicase', serif;
+    font-weight: 300;
+    letter-spacing: 0.18em;
+    text-shadow: 0 0 2px black, 0 0 10px white;
+    color: white;
+    font-size: 15em;
+}
+
+#byline {
+    background-color: #303539;
+    font-size: 2.5em;
+    color: #ddd;
+}
+
+#headline {
+    height: 100vh;
+    background-image: url(../newimg/headline.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    background-color: #050706;
+}
+
+#headline h1 {
+    margin: 0;
+    padding-top: 20vh;
+}
+
+#headline h2 {
+    color: rgba(255, 200, 50, 1);
+    font-family: Parisienne, serif;
+    font-weight: 400;
+    font-size: 10em;
+    margin: 0;
+    padding-bottom: 5vh;
+    text-shadow: 0 0 2px black;
+}
+
+#headline a {
+    box-shadow: 0 0 10px 2px black;
+    border-radius: 10px;
+    font-size: 5em;
+    padding: 10px 30px;
+    background-color: rgba(255,255,255,1);
+    text-shadow: 0 0 5px white;
+    transition: 0.2s all ease-in-out;
+}
+
+#headline a:hover {
+    background-color: rgb(70, 140, 255);
+    color: white;
+    box-shadow: 0 0 10px 5px white;
+}
+
+#about {
+    font-size: 4em;
+    color: white;
+    padding: 30vh 10%;
+    background-color: #336699;
+    box-shadow: 0 0 50px 5px black inset;
+}
+
+#entertainment {
+    color: white;
+    background-image: url(../newimg/entertainment.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    background-color: black;
+    height: 100vh;
+}
+
+#entertainment h1 {
+    text-shadow: 0 0 1px black;
+    padding-top: 25vh;
+}
+
+#entertainment p {
+    font-size: 6em;
+    font-weight: 300;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+#committee {    
+    background-color: #336699;
+    box-shadow: 0 0 50px 5px black inset;
+}
+
+#committee h1 {
+    padding-top: 5vh;
+}
+
+.Deet {
+    font-size: 3em;
+}
+
+#deethouser {
+      /*taken from contact.css*/
+    display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row  wrap;
+      flex-flow: row  wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+    padding: 2em 0;
+}
+
+#sponsors {
+    background-image: url(../newimg/sponsors.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    background-color: black;
+    height: 90vh;
+}
+
+#sponsors h1 {
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
+
+#sponsors a {
+    box-shadow: 0 0 10px 2px black;
+    border-radius: 10px;
+    font-size: 5em;
+    padding: 10px 30px;
+    margin-bottom: 50vh;
+    background-color: rgba(255,255,255,0.7);
+    text-shadow: 0 0 5px white;
+    transition: 0.2s all ease-in-out;
+}
+
+#sponsors a:hover {
+    background-color: rgb(170, 60, 30);
+    color: white;
+    box-shadow: 0 0 10px 5px white;
+}
