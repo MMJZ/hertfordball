@@ -1,0 +1,145 @@
+body, html {
+    overflow: hidden;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: Parisiene;
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+.parallax {
+    font-size: 200%;
+}
+
+/* centre the content in the parallax layers */
+.title {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+.parallax {
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+}
+
+.parallax__group {
+    position: relative;
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.parallax__layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 4;
+}
+
+.parallax__layer--back {
+    -webkit-transform: translateZ(-300px) scale(2);
+    transform: translateZ(-300px) scale(2);
+    z-index: 3;
+}
+
+#group1 {
+    z-index: 5; /* slide over group 2 */
+}
+#group1 .parallax__layer--base {
+    background-color: white;
+}
+#group1 img {
+    height: 100vh;
+}
+#group1 h1 {
+    float: right;
+    font-family: 'Alex Brush', cursive;
+    font-weight: 100;
+    top: 30%;
+    right: 15%;
+    position: absolute;
+    font-size: 5em;
+    text-shadow: 3px 3px 2px #ccc;
+    text-align: center;
+}
+
+#group2 {
+    z-index: 3; /* slide under groups 1 and 3 */
+}
+#group2 .parallax__layer--back {
+    background-image: url(../newimg/headline.jpg);
+    background-size: 100% 100vh;
+}
+
+#group3 {
+    z-index: 4; /* slide over group 2 and 4 */
+}
+#group3 .parallax__layer--base {
+    background: rgb(153,216,101);
+}
+
+#group4 {
+    z-index: 2; /* slide under group 3 and 5 */
+}
+#group4 .parallax__layer--back {
+    background-image: url(../newimg/entertainment.jpg);
+    background-size: 100% 100vh;
+}
+
+#group5 {
+    z-index: 3; /* slide over group 4 and 6 */
+}
+#group5 .parallax__layer--base {
+    background: rgb(214,229,100);
+}
+
+#group6 {
+    z-index: 2; /* slide under group 5 and 7 */
+}
+#group6 .parallax__layer--back {
+    background-image: url(../newimg/sponsors.jpg);
+    background-size: 100% 100vh;
+}
+
+#group7 {
+    z-index: 3; /* slide over group 7 */
+}
+#group7 .parallax__layer--base {
+    background: rgb(255,241,100);
+}
+
+
+
+#logo {
+    position: absolute;
+    left: 30%;
+    float: left;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
