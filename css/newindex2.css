@@ -46,7 +46,7 @@ body {font-size: 62.5%;}
     background-size: 100% 100vh;
 }
 #group3 {z-index: 4;} /* slide over group 2 and 4 */
-#group3 .parallax__layer--base {background: rgb(153,216,101);}
+#group3 .parallax__layer--base {background: rgba(153,216,101, 0);}
 #group4 {z-index: 2;} /* slide under group 3 and 5 */
 #group4 .parallax__layer--back {
     background-image: url(../newimg/entertainment.jpg);
@@ -90,6 +90,17 @@ body {font-size: 62.5%;}
     color: #333;
 }
 
+.rotateleft {
+    -webkit-transform: rotate(-5deg); /* Safari */
+    transform: rotate(-5deg); /* Standard syntax */
+    overflow: visible;
+}
+
+.rotateright {
+    -webkit-transform: rotate(5deg); /* Safari */
+    transform: rotate(5deg); /* Standard syntax */
+}
+
 .centre {
     width: 100%;
     max-width: 1280px;
@@ -99,18 +110,12 @@ body {font-size: 62.5%;}
     transform: translate(-50%,-50%);
     -webkit-transform: translate(-50%, -50%);
     max-height: 700px;
-    overflow: scroll;
 }
 
 .textblock {
     font-family: sans-serif;
     text-align: center;
     max-width: 1200px;
-}
-
-.shadowed {
-    color: white;
-    text-shadow: 0 0 5px black;
 }
 
 .textblock h1 {
@@ -125,7 +130,68 @@ body {font-size: 62.5%;}
     font-size: 1.2em;
 }
 
+.shadowed {
+    color: white;
+    text-shadow: 0 0 5px black;
+}
 
+.postcard {
+    background-image: url("../newimg/postcard border.png"), url(../newimg/BB_SeamlessPaper_05.jpg);
+    background-repeat: repeat-x, repeat;
+    border-radius: 2px;
+    letter-spacing: 0.1em;
+    box-shadow: 2px 2px 10px black;
+    width: 70%;
+    padding: 20px;
+    margin: 0 auto;
+    overflow: auto;
+    height: 600px;
+    font-family: 'Slabo 27px', serif;
+    text-shadow: 0.5px 0.5px 1px #444;
+}
+
+.postcard img {
+    position: absolute;
+}
+
+#pimgwavyline {
+    top: 30px;
+    right: 110px;
+    height: 150px;
+    width: 150px;
+}
+
+#pimgparavion {
+    top: 20px;
+    right: 30px;
+    height: 170px;
+    width: 170px;
+}
+
+.postcardleft {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    
+}
+
+.postcardright {
+    width: 50%;
+    float: right;
+    box-sizing: border-box;
+}
+
+.postcardright h1 {
+    margin-top: 30%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.postcardright p {
+    padding-top: 10px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
 
 #buytickets {
     padding: 15px 40px;
