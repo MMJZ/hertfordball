@@ -168,6 +168,12 @@ body {font-size: 62.5%;}
     width: 170px;
 }
 
+#pimgparadise {
+    top: 80px;
+    left: 20px;
+    width: 45%;
+}
+
 .postcardleft {
     width: 50%;
     float: left;
