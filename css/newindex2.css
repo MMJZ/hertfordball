@@ -53,7 +53,7 @@ body {font-size: 62.5%;}
     background-size: 100% 100vh;
 }
 #group5 {z-index: 3;} /* slide over group 4 and 6 */
-#group5 .parallax__layer--base {background: rgb(214,229,100);}
+#group5 .parallax__layer--base {background: rgba(214,229,100, 0);}
 #group6 {z-index: 2;} /* slide under group 5 and 7 */
 #group6 .parallax__layer--back {
     background-image: url(../newimg/sponsors.jpg);
@@ -136,18 +136,20 @@ body {font-size: 62.5%;}
 }
 
 .postcard {
-    background-image: url("../newimg/postcard border.png"), url(../newimg/BB_SeamlessPaper_05.jpg);
-    background-repeat: repeat-x, repeat;
+    /*http://www.bittbox.com/freebies/freebie-friday-6-vintage-paper-photoshop-patterns*/
+    background-image: url("../newimg/dirtvint.png"), url("../newimg/postcard border.png"), url(../newimg/BB_SeamlessPaper_05.jpg);
+    background-repeat: repeat, repeat-x, repeat;
     border-radius: 2px;
     letter-spacing: 0.1em;
     box-shadow: 2px 2px 10px black;
     width: 70%;
-    padding: 20px;
+    padding: 50px;
     margin: 0 auto;
     overflow: auto;
     height: 600px;
     font-family: 'Slabo 27px', serif;
     text-shadow: 0.5px 0.5px 1px #444;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.3) inset;
 }
 
 .postcard img {
@@ -168,35 +170,52 @@ body {font-size: 62.5%;}
     width: 170px;
 }
 
+/*
 #pimgparadise {
     top: 80px;
     left: 20px;
     width: 45%;
 }
+*/
 
 .postcardleft {
     width: 50%;
     float: left;
     box-sizing: border-box;
-    
+}
+
+.postcardleft h1 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.postcardleft p {
+    padding-right: 30px;
+    border-right: 1px solid black;
+    font-size: 1.2em;
+    line-height: 1.5em;
 }
 
 .postcardright {
     width: 50%;
     float: right;
+    padding-left: 50px;
     box-sizing: border-box;
-}
-
-.postcardright h1 {
-    margin-top: 30%;
-    padding-bottom: 10px;
-    border-bottom: 1px solid black;
+    margin-top: 150px;
 }
 
 .postcardright p {
-    padding-top: 10px;
-    font-size: 1.2em;
-    line-height: 1.5em;
+    font-size: 2em;
+    text-align: right;
+    padding-top: 30px;
+    border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 1100px){
+    .postcardright p {
+        font-size: 1.1em;
+        line-height: 1.2em;
+    }
 }
 
 #buytickets {
