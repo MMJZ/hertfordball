@@ -39,7 +39,8 @@
                 alert("This part of the website isn't yet ready.\napologies etc");
             }
             function scroll(n){
-                $('html, body').animate({scrollTop: $('#group' + n).offset().top - 20}, 'slow');
+                console.log(n);
+                $('html, body').animate({scrollTop: $('#group' + n).offset().top - 20}, 1000);
             }
             
             //var easter_egg = new Konami(function() { alert('Konami code!')});
@@ -91,7 +92,6 @@
                                 <p>Hertford College</p>
                                 <p>Catte Street</p>
                                 <p>Oxford</p>
-                                <p>OX1 3BW</p>
                             </div>
                         </div>
                     </div>
@@ -121,7 +121,6 @@
                                 <p>Hertford College</p>
                                 <p>Catte Street</p>
                                 <p>Oxford</p>
-                                <p>OX1 3BW</p>
                             </div>
                         </div>
                     </div>
@@ -148,7 +147,6 @@
                                 <p>Hertford College</p>
                                 <p>Catte Street</p>
                                 <p>Oxford</p>
-                                <p>OX1 3BW</p>
                             </div>
                         </div>
                     </div>

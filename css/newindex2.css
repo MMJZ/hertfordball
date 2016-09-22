@@ -181,7 +181,6 @@ nav li:hover {
     padding: 50px;
     margin: 0 auto;
     overflow: auto;
-    height: 600px;
     font-family: 'Slabo 27px', serif;
     text-shadow: 0.5px 0.5px 1px #444;
 }
@@ -212,10 +211,10 @@ nav li:hover {
 }
 
 #pimglogo {
-    bottom: 60px;
-    right: 200px;
-    width: 300px;
-    height: 300px;
+    bottom: 50px;
+    right: 50px;
+    width: 250px;
+    height: 250px;
     transform: rotate(-30deg);
 }
 
@@ -229,9 +228,6 @@ nav li:hover {
 
 create a set of backgrounds such that the top and bottom of each fades to the same
 wheat colour
-so the user scrolls through alternatey rotated postcards for the bulk of the page
-put the hertford stamp (sans text?) in the bottom right corner of all postcards
-over address
 superfluous info
 
 
@@ -269,7 +265,6 @@ superfluous info
 .postcardright p {
     font-size: 1.6em;
     line-height: 2em;
-    text-align: right;
     padding-top: 30px;
     border-bottom: 1px solid black;
 }
