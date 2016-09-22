@@ -37,7 +37,7 @@ body {font-size: 62.5%;}
 }
 #group1 {z-index: 5;} /* slide over group 2 */
 #group1 .parallax__layer--base {
-    background: white url(../newimg/stamp.svg.png) no-repeat scroll center;
+    background: white url(../newimg/logo.png) no-repeat scroll center;
     background-size: 60vh;
 }
 #group2 {z-index: 3;} /* slide under groups 1 and 3 */
@@ -67,7 +67,6 @@ body {font-size: 62.5%;}
 #foottop {
     position: absolute;
     width: 100%;
-    margin: 0 auto;
     text-align: center;
     font-family: Roboto;
     padding-top: 10px;
@@ -88,6 +87,29 @@ body {font-size: 62.5%;}
 #header p {
     font-size: 2em;
     color: #333;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    font-size: 1.2em;
+    font-weight: 100;
+    font-family: Roboto, sans-serif;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    width: 19%;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid white;
+}
+
+nav li:hover {
+    border-bottom: 1px solid black;
 }
 
 .rotateleft {
@@ -130,6 +152,11 @@ body {font-size: 62.5%;}
     font-size: 1.2em;
 }
 
+.textblock a:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 5px white;
+}
+
 .shadowed {
     color: white;
     text-shadow: 0 0 5px black;
@@ -143,6 +170,7 @@ body {font-size: 62.5%;}
     border-radius: 2px;
     border-style: solid;
     border-width: 38px;
+    /*http://border-image.com*/
     -moz-border-image: url("../newimg/postcard border img.png") 38 round;
     -webkit-border-image: url("../newimg/postcard border img.png") 38 round;
     -o-border-image: url("../newimg/postcard border img.png") 38 round;
@@ -163,9 +191,9 @@ body {font-size: 62.5%;}
 }
 
 #pimgwavyline {
-    top: 0px;
-    right: -50px;
-    height: 300px;
+    top: 50px;
+    right: 0px;
+    height: 150px;
     width: 500px;
 }
 
@@ -182,6 +210,35 @@ body {font-size: 62.5%;}
     width: 170px;
     height: 170px;
 }
+
+#pimglogo {
+    bottom: 60px;
+    right: 200px;
+    width: 300px;
+    height: 300px;
+    transform: rotate(-30deg);
+}
+
+/*
+
+
+
+
+    note to self
+
+
+create a set of backgrounds such that the top and bottom of each fades to the same
+wheat colour
+so the user scrolls through alternatey rotated postcards for the bulk of the page
+put the hertford stamp (sans text?) in the bottom right corner of all postcards
+over address
+superfluous info
+
+
+
+
+
+*/
 
 .postcardleft {
     width: 50%;
@@ -210,7 +267,8 @@ body {font-size: 62.5%;}
 }
 
 .postcardright p {
-    font-size: 2em;
+    font-size: 1.6em;
+    line-height: 2em;
     text-align: right;
     padding-top: 30px;
     border-bottom: 1px solid black;
@@ -223,20 +281,23 @@ body {font-size: 62.5%;}
     }
 }
 
-#buytickets {
+.button {
     padding: 15px 40px;
-    background-color: #09F;
-    border-radius: 5px;
+    background-color: rgba(0, 153, 255, 0.5);
     margin-top: 30px;
     margin-bottom: 10px;
     display: inline-block;
     font-size: 2em;
     box-shadow: 0 0 5px black;
+    text-decoration: none;
+    color: white;
+    text-shadow: none;
     transition: all 0.2s ease-in-out;
 }
 
-#buytickets:hover {
-    background-color: #5DF;
+.button:hover {
+    background-color: white;
+    color: rgba(0, 76, 18, 0.7);
 }
 
 #leftcontact {
@@ -250,7 +311,6 @@ body {font-size: 62.5%;}
 }
 
 .Deet {
-    border-radius: 10px;
     margin: 15px auto;
     padding: 5px 1em;
     width: 18em;
@@ -264,6 +324,7 @@ body {font-size: 62.5%;}
     padding: 0;
     font-weight: 700;
     font-size: 1.4em;
+    border: none;
 }
 
 .Deet h2 {
