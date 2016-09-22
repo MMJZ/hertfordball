@@ -37,26 +37,26 @@ body {font-size: 62.5%;}
 }
 #group1 {z-index: 5;} /* slide over group 2 */
 #group1 .parallax__layer--base {
-    background: white url(../newimg/logo.png) no-repeat scroll center;
+    background: white url(../imgs/stamp.png) no-repeat scroll center;
     background-size: 60vh;
 }
 #group2 {z-index: 3;} /* slide under groups 1 and 3 */
 #group2 .parallax__layer--back {
-    background-image: url(../newimg/headline.jpg);
+    background-image: url(../imgs/headline.jpg);
     background-size: 100% 100vh;
 }
 #group3 {z-index: 4;} /* slide over group 2 and 4 */
 #group3 .parallax__layer--base {background: rgba(153,216,101, 0);}
 #group4 {z-index: 2;} /* slide under group 3 and 5 */
 #group4 .parallax__layer--back {
-    background-image: url(../newimg/entertainment.jpg);
+    background-image: url(../imgs/entertainment.jpg);
     background-size: 100% 100vh;
 }
 #group5 {z-index: 3;} /* slide over group 4 and 6 */
 #group5 .parallax__layer--base {background: rgba(214,229,100, 0);}
 #group6 {z-index: 2;} /* slide under group 5 and 7 */
 #group6 .parallax__layer--back {
-    background-image: url(../newimg/sponsors.jpg);
+    background-image: url(../imgs/sponsors.jpg);
     background-size: 100% 100vh;
 }
 #group7 {z-index: 3;} /* slide over group 7 */
@@ -164,17 +164,17 @@ nav li:hover {
 
 .postcard {
     /*http://www.bittbox.com/freebies/freebie-friday-6-vintage-paper-photoshop-patterns*/
-/*    background-image: url("../newimg/dirtvint.png"), url("../newimg/postcard border.png"), url(../newimg/BB_SeamlessPaper_05.jpg);*/
-    background-image: url("../newimg/dirtvint.png"), url(../newimg/BB_SeamlessPaper_05.jpg);
+/*    background-image: url("../imgs/dirtvint.png"), url("../imgs/postcard border.png"), url(../imgs/BB_SeamlessPaper_05.jpg);*/
+    background-image: url("../imgs/dirtvint.png"), url(../imgs/BB_SeamlessPaper_05.jpg);
     background-repeat: repeat, repeat;
     border-radius: 2px;
     border-style: solid;
     border-width: 38px;
     /*http://border-image.com*/
-    -moz-border-image: url("../newimg/postcard border img.png") 38 round;
-    -webkit-border-image: url("../newimg/postcard border img.png") 38 round;
-    -o-border-image: url("../newimg/postcard border img.png") 38 round;
-    border-image: url("../newimg/postcard border img.png") 38 round;
+    -moz-border-image: url("../imgs/postcard border img.png") 38 round;
+    -webkit-border-image: url("../imgs/postcard border img.png") 38 round;
+    -o-border-image: url("../imgs/postcard border img.png") 38 round;
+    border-image: url("../imgs/postcard border img.png") 38 round;
     letter-spacing: 0.1em;
     box-shadow: 2px 2px 10px black;
     width: 70%;
