@@ -1,5 +1,5 @@
 /* Skeleton */
-body, html {overflow: hidden;}
+body, html {overflow: hidden; background-color: black;}
 body {font-size: 62.5%;}
 * {margin:0;padding:0;}
 .parallax {font-size: 200%;}
@@ -36,47 +36,68 @@ body {font-size: 62.5%;}
     z-index: 3;
 }
 #group1 {z-index: 5;} /* slide over group 2 */
-#group1 .parallax__layer--base {
-    background: white url(../imgs/stamp.png) no-repeat scroll center;
-    background-size: 60vh;
-}
+#group1 .parallax__layer--base {}
 #group2 {z-index: 3;} /* slide under groups 1 and 3 */
 #group2 .parallax__layer--back {
-    background-image: url(../imgs/headline.jpg);
-    background-size: 100% 100vh;
+/*    background-image: url(../imgs/headline.jpg);*/
+/*    background-size: 100% 100vh;*/
+    background-image: url(../imgs/skulls.png);
 }
 #group3 {z-index: 4;} /* slide over group 2 and 4 */
 #group3 .parallax__layer--base {background: rgba(153,216,101, 0);}
 #group4 {z-index: 2;} /* slide under group 3 and 5 */
 #group4 .parallax__layer--back {
-    background-image: url(../imgs/entertainment.jpg);
-    background-size: 100% 100vh;
+/*    background-image: url(../imgs/entertainment.jpg);*/
+/*    background-size: 100% 100vh;*/
+    background-image: url(../imgs/skulls.png);
 }
 #group5 {z-index: 3;} /* slide over group 4 and 6 */
 #group5 .parallax__layer--base {background: rgba(214,229,100, 0);}
 #group6 {z-index: 2;} /* slide under group 5 and 7 */
 #group6 .parallax__layer--back {
-    background-image: url(../imgs/sponsors.jpg);
-    background-size: 100% 100vh;
+/*    background-image: url(../imgs/sponsors.jpg);*/
+/*    background-size: 100% 100vh;*/
+    background-image: url(../imgs/skulls.png);
 }
 #group7 {z-index: 3;} /* slide over group 7 */
 #group7 .parallax__layer--base {background: rgb(255,241,100);}
 
 /* usr */
 
+#intro {
+    background-image: url(../imgs/stamp.png), url(../imgs/BB_SeamlessPaper_03.jpg);
+    background-repeat: no-repeat, repeat;
+    background-position: center, top left;
+    background-size: 60vh, 200px;
+}
+
+.fillcard {
+    box-shadow: 0 0 50px black inset;
+    width: 100%;
+    height: 100%;
+}
+
 #foottop {
     position: absolute;
     width: 100%;
-    text-align: center;
-    font-family: Roboto;
     padding-top: 10px;
     font-weight: 100;
     z-index: 1000;
 }
 
-#header {
-    text-shadow: 0 0 5px white;
+.introtext {
+    font-size: 1.4em;
+    font-weight: 100;
+    font-family: monospace;
+    color: white;
     text-align: center;
+}
+
+#header {
+    text-shadow: 0 0 5px black;
+    text-align: center;
+    color: white;
+    font-family: monospace;
 }
 
 #header h1 {
@@ -86,17 +107,14 @@ body {font-size: 62.5%;}
 
 #header p {
     font-size: 2em;
-    color: #333;
+    font-weight: 700;
+    color: #ddd;
 }
 
 nav {
     position: absolute;
     width: 100%;
     bottom: 30px;
-    font-size: 1.2em;
-    font-weight: 100;
-    font-family: Roboto, sans-serif;
-    text-align: center;
 }
 
 nav li {
@@ -105,11 +123,11 @@ nav li {
     cursor: pointer;
     box-sizing: border-box;
     transition: all 0.2s ease-in-out;
-    border: 1px solid white;
+    border: 1px solid rgba(0, 0, 0, 0);
 }
 
 nav li:hover {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid white;
 }
 
 .rotateleft {
@@ -143,8 +161,7 @@ nav li:hover {
 .textblock h1 {
     letter-spacing: 0.1em;
     padding-bottom: 20px;
-    font-size: 3em;
-    border-bottom: 1px solid white;
+    font-size: 2em;
 }
 
 .textblock p {
@@ -171,10 +188,10 @@ nav li:hover {
     border-style: solid;
     border-width: 38px;
     /*http://border-image.com*/
-    -moz-border-image: url("../imgs/postcard border img.png") 38 round;
-    -webkit-border-image: url("../imgs/postcard border img.png") 38 round;
-    -o-border-image: url("../imgs/postcard border img.png") 38 round;
-    border-image: url("../imgs/postcard border img.png") 38 round;
+    -moz-border-image: url("../imgs/postcard border img2.png") 38 round;
+    -webkit-border-image: url("../imgs/postcard border img2.png") 38 round;
+    -o-border-image: url("../imgs/postcard border img2.png") 38 round;
+    border-image: url("../imgs/postcard border img2.png") 38 round;
     letter-spacing: 0.1em;
     box-shadow: 2px 2px 10px black;
     width: 70%;
@@ -282,12 +299,12 @@ superfluous info
     margin-top: 30px;
     margin-bottom: 10px;
     display: inline-block;
-    font-size: 2em;
+    font-size: 1.5em;
     box-shadow: 0 0 5px black;
-    text-decoration: none;
     color: white;
     text-shadow: none;
     transition: all 0.2s ease-in-out;
+    text-decoration: none;
 }
 
 .button:hover {
@@ -313,6 +330,7 @@ superfluous info
     font-family: Roboto, sans-serif;
     text-align: center;
     background-color: rgba(0,0,0,0.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05) inset;
 }
 
 .Deet h1 {
@@ -339,4 +357,8 @@ superfluous info
 .Deet a {
     text-decoration: none;
     color: #09F;
+}
+
+#committee {
+    background-image: url(../imgs/BB_SeamlessPaper_03.jpg);
 }
