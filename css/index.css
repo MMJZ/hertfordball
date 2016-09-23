@@ -83,18 +83,20 @@ body {font-size: 62.5%;}
     padding-top: 10px;
     font-weight: 100;
     z-index: 1000;
+    font-size: 1.2em;
+    color: #eee;
 }
 
 .introtext {
     font-size: 1.4em;
-    font-weight: 100;
+    font-weight: 400;
     font-family: monospace;
     color: white;
     text-align: center;
 }
 
 #header {
-    text-shadow: 0 0 5px black;
+    text-shadow: 0 0 100px black, 0 0 100px rgb(100,100,0);
     text-align: center;
     color: white;
     font-family: monospace;
@@ -103,12 +105,14 @@ body {font-size: 62.5%;}
 #header h1 {
     font-size: 5em;
     letter-spacing: 0.2em;
+    text-shadow: 0 0 100px black, 0 0 100px rgb(100,100,0), 2px 2px 3px rgba(0,0,0,0.5);
 }
 
 #header p {
     font-size: 2em;
-    font-weight: 700;
-    color: #ddd;
+    /*! font-weight: 700; */
+    color: rgba(255,255,255,0.8);
+    font-style: italic;
 }
 
 nav {
@@ -123,7 +127,7 @@ nav li {
     cursor: pointer;
     box-sizing: border-box;
     transition: all 0.2s ease-in-out;
-    border: 1px solid rgba(0, 0, 0, 0);
+    border: 2px solid transparent;
 }
 
 nav li:hover {
@@ -171,7 +175,8 @@ nav li:hover {
 
 .textblock a:hover {
     text-decoration: underline;
-    text-shadow: 0 0 5px white;
+    /*! text-shadow: 0 0 5px white; */
+    color: #513710;
 }
 
 .shadowed {
@@ -326,7 +331,7 @@ superfluous info
     margin: 15px auto;
     padding: 5px 1em;
     width: 18em;
-    color: #333;
+    color: #292929;
     font-family: Roboto, sans-serif;
     text-align: center;
     background-color: rgba(0,0,0,0.05);
@@ -356,7 +361,7 @@ superfluous info
 
 .Deet a {
     text-decoration: none;
-    color: #09F;
+    color: #1B506B;
 }
 
 #committee {
