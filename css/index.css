@@ -4,7 +4,7 @@ body {font-size: 62.5%;}
 * {margin:0;padding:0;}
 .parallax {font-size: 200%;}
 .parallax {
-    height: 700px; /* fallback for older browsers */
+    height: 700px;
     height: 100vh;
     min-height: 700px;
     overflow-x: hidden;
@@ -14,7 +14,7 @@ body {font-size: 62.5%;}
 }
 .parallax__group {
     position: relative;
-    height: 700px; /* fallback for older browsers */
+    height: 700px;
     height: 100vh;
     min-height: 700px;
 }
@@ -26,8 +26,6 @@ body {font-size: 62.5%;}
     bottom: 0;
 }
 .parallax__layer--base {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
     z-index: 4;
 }
 .parallax__layer--back {
@@ -35,32 +33,10 @@ body {font-size: 62.5%;}
     transform: translateZ(-300px) scale(2);
     z-index: 3;
 }
-#group1 {z-index: 5;} /* slide over group 2 */
-#group1 .parallax__layer--base {}
-#group2 {z-index: 3;} /* slide under groups 1 and 3 */
-#group2 .parallax__layer--back {
-/*    background-image: url(../imgs/headline.jpg);*/
-/*    background-size: 100% 100vh;*/
-    background-image: url(../imgs/skulls.png);
-}
-#group3 {z-index: 4;} /* slide over group 2 and 4 */
-#group3 .parallax__layer--base {background: rgba(153,216,101, 0);}
-#group4 {z-index: 2;} /* slide under group 3 and 5 */
-#group4 .parallax__layer--back {
-/*    background-image: url(../imgs/entertainment.jpg);*/
-/*    background-size: 100% 100vh;*/
-    background-image: url(../imgs/skulls.png);
-}
-#group5 {z-index: 3;} /* slide over group 4 and 6 */
-#group5 .parallax__layer--base {background: rgba(214,229,100, 0);}
-#group6 {z-index: 2;} /* slide under group 5 and 7 */
-#group6 .parallax__layer--back {
-/*    background-image: url(../imgs/sponsors.jpg);*/
-/*    background-size: 100% 100vh;*/
-    background-image: url(../imgs/skulls.png);
-}
-#group7 {z-index: 3;} /* slide over group 7 */
-#group7 .parallax__layer--base {background: rgb(255,241,100);}
+
+#group2 .parallax__layer--back {background-image: url(../imgs/skulls.png);}
+#group4 .parallax__layer--back {background-image: url(../imgs/skulls.png);}
+#group6 .parallax__layer--back {background-image: url(../imgs/skulls.png);}
 
 /* usr */
 
