@@ -1,0 +1,70 @@
+
+
+header {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-image: url(../img/stamp.png), url(../img/BB_SeamlessPaper_03.jpg);
+    background-position: center, top left;
+    background-repeat: no-repeat, repeat;
+    background-size: 70vh, 150px;
+}
+
+ul.nav {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.nav li {
+    display: inline-block;
+    width: 20%;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    transition: all 0.2s ease-in-out;
+}
+
+.nav a:hover {
+    border-bottom: 1px solid white;
+}
+
+#title {
+    position: absolute;
+    top: 30vh;
+    width: 100%;
+    color: white;
+}
+
+header {
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+header h1 {
+    letter-spacing: 0.2em;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 62.5%;
+}
+
+#foottop {
+    padding-top: 5px;
+}
