@@ -1,6 +1,6 @@
-function scrollToSection(divNum) {
-    var offset = 20;
-    $('.parallax').animate({
-        scrollTop: $("#group" + divNum).offset().top + offset
-    }, 2000);
+function scrollToSection(nm, t) {
+    var offset = -60;
+    $('html, body').animate({
+        scrollTop: $("#" + nm).offset().top + offset
+    }, t * 300 + 400);
 }

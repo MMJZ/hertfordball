@@ -19,21 +19,22 @@
     </head>
     <body>
         <header>
+            <img id="logo" src="img/stamp.png">
             <div id="foottop">site by antonia siu and michael agius</div>
             <div id="title">
                 <h1>paradise found</h1>
                 <p>tickets on sale friday of 3<sup>rd</sup> week michaelmas</p>
             </div>
             <ul class="nav">
-                <li><a href="#" onclick="scrollToSection(2)">theme</a>
-                </li><li><a href="#">entertainment</a>
-                </li><li><a href="#">food &amp; drink</a>
-                </li><li><a href="#">sponsors</a>
-                </li><li><a href="#">committee</a></li>
+                <li><a href="#" onclick="scrollToSection('theme', 1)">theme</a>
+                </li><li><a href="#" onclick="scrollToSection('entertainment', 2)">entertainment</a>
+                </li><li><a href="#" onclick="scrollToSection('fooddrink', 3)">food &amp; drink</a>
+                </li><li><a href="#" onclick="scrollToSection('sponsors', 4)">sponsors</a>
+                </li><li><a href="#" onclick="scrollToSection('committee', 5)">committee</a></li>
             </ul>  
         </header>
         <main>
-            <div class="rotateright postcard">
+            <div id="theme" class="rotateright postcard">
                 <img class="pparavion" src="img/pParAvion.png">
                 <img class="pparadise" src="img/pParadise.png">
                 <img class="pwavyline" src="img/pWavyLine.png">
@@ -54,13 +55,29 @@
                 </div>
             </div>
 
-            <div class="rotateright postcard">
+            <div id="entertainment" class="rotateleft postcard">
                 <img class="pparavion" src="img/pParAvion.png">
                 <img class="pparadise" src="img/pParadise.png">
                 <img class="pwavyline" src="img/pWavyLine.png">
                 <img class="plogo" src="img/stamp.png">
                 <div class="postcardleft">
                     <h1>Theme</h1>
+                    <p>Hello, it's me. This is the bee movie script. This is James Hopper of the Jupiter Mission. The film is 2001: A Space Odyssey. The Dawn of Man sure dragged huh.</p>
+                </div>
+                <div class="postcardright">
+                    <p>Hertford College</p>
+                    <p>Catte Street</p>
+                    <p>Oxford</p>
+                </div>
+            </div>
+
+            <div id="fooddrink" class="rotateright postcard">
+                <img class="pparavion" src="img/pParAvion.png">
+                <img class="pparadise" src="img/pParadise.png">
+                <img class="pwavyline" src="img/pWavyLine.png">
+                <img class="plogo" src="img/stamp.png">
+                <div class="postcardleft">
+                    <h1>Food &amp; Drink</h1>
                     <p>Soon, Christian McBride’s anticipated bass
                         riff joined the refrain. The great speeches faded
                         along with the drum line, and the jazz took hold, as
@@ -75,28 +92,7 @@
                 </div>
             </div>
 
-            <div class="rotateright postcard">
-                <img class="pparavion" src="img/pParAvion.png">
-                <img class="pparadise" src="img/pParadise.png">
-                <img class="pwavyline" src="img/pWavyLine.png">
-                <img class="plogo" src="img/stamp.png">
-                <div class="postcardleft">
-                    <h1>Theme</h1>
-                    <p>Soon, Christian McBride’s anticipated bass
-                        riff joined the refrain. The great speeches faded
-                        along with the drum line, and the jazz took hold, as
-                        was permissible since the foundation had been laid:
-                        Jazz is a music, a history, a culture. That is,
-                        African-American culture is intrinsic to jazz.</p>
-                </div>
-                <div class="postcardright">
-                    <p>Hertford College</p>
-                    <p>Catte Street</p>
-                    <p>Oxford</p>
-                </div>
-            </div>
-
-            <div class="rotateright postcard">
+            <div id="sponsors" class="rotateleft postcard">
                 <img class="pparavion" src="img/pParAvion.png">
                 <img class="pparadise" src="img/pParadise.png">
                 <img class="pwavyline" src="img/pWavyLine.png">
