@@ -3,15 +3,20 @@ body {
     padding: 0;
     border: 0;
     font-size: 62.5%;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+    overflow-x: hidden;
 }
 
 #backing {
     position: fixed;
     width: 100%;
-    height: 100vh;
-    top: 0;
+    height: 400vh;
+    top: -100vh;
     left: 0;
-    background-color: red;
+    background-image: url(../img/paper1.jpg);
+    -webkit-transform: translateZ(-300px) scale(2);
+            transform: translateZ(-300px) scale(2);
 }
 
 header {
@@ -57,6 +62,7 @@ ul.nav {
     text-decoration: none;
     color: white;
     border-bottom: 1px solid rgba(0, 0, 0, 0);
+    -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 
@@ -122,6 +128,7 @@ main {
     text-align: center;
     margin: 30px 20px;
     padding: 10px 0;
+    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     border-radius: 3px;
 }
@@ -159,21 +166,25 @@ main {
 }
 
 .rotateleft {
-    transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
     float: left;
 }
 
 .smallrotateleft {
-    transform: rotate(-4deg);
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
 }
 
 .rotateright {
-    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
     float: right;
 }
 
 .smallrotateright {
-    transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
 }
 
 .pparavion {
@@ -202,7 +213,8 @@ main {
     right: 0;
     height: 210px;
     width: 210px;
-    transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
 }
 
 .postcardright {
@@ -226,7 +238,8 @@ main {
     .plogo {
         height: 150px;
         width: 150px;
-        transform: rotate(-20deg);
+        -webkit-transform: rotate(-20deg);
+                transform: rotate(-20deg);
     }
     .postcardright {
         margin-top: 15%;
@@ -271,7 +284,13 @@ main {
 
 #committeetitle {
     font-size: 5em;
-    border-bottom: 1px solid black;
+    width: 40%;
+    min-width: 300px;
+    margin: 0 auto 50px auto;
+    background-image: url(../img/paper2.jpg);
+/*    border: 1px solid black;*/
+    box-shadow: 0 0 20px black;
+    border-width: 15px;
 }
 
 .deet {
@@ -283,7 +302,7 @@ main {
     border-width: 15px;
 }
 
-.deet h3, .deet h2, #committee h1 {
+.deet h3, .deet h2, .deet h1 {
     margin: 0;
     font-weight: 100;
 }
