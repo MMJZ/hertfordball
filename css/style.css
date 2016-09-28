@@ -5,7 +5,7 @@ body {
     font-size: 62.5%;
     -webkit-perspective: 1px;
     perspective: 1px;
-    perspective-origin-x: 100%;
+    transform-style: preserve-3d;
     overflow-x: hidden;
 }
 
@@ -14,11 +14,11 @@ body {
     width: 100%;
     height: 400vh;
     top: -100vh;
+    transform-style: preserve-3d;
     left: 0;
     background-image: url(../img/paper1.jpg);
     -webkit-transform: translateZ(-1px) scale(2);
             transform: translateZ(-1px) scale(2);
-    transform-origin-x: 100%;
 }
 
 header {
