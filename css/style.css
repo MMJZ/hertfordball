@@ -18,6 +18,7 @@ header {
     font-weight: 100;
     min-height: 500px;
     position: relative;
+    border-bottom: 1px solid black;
 }
 
 #logo {
@@ -53,6 +54,21 @@ ul.nav {
 
 .nav a:hover {
     border-bottom: 1px solid white;
+}
+
+@media only screen and (max-width: 930px){
+    header {
+        height: auto;
+    }
+    ul.nav {
+        position: relative;
+        margin-top: -15vh;
+    }
+    .nav li {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 #title {
@@ -238,7 +254,7 @@ main {
 
 #committee {
     clear: both;
-    padding-top: 160px;
+    padding-top: 130px;
     width: 100%;
     text-align: center;
     font-family: cursive;
@@ -246,6 +262,7 @@ main {
 
 #committeetitle {
     font-size: 5em;
+    border-bottom: 1px solid black;
 }
 
 .deet {
