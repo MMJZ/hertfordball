@@ -3,8 +3,9 @@ body {
     padding: 0;
     border: 0;
     font-size: 62.5%;
-    -webkit-perspective: 300px;
-    perspective: 300px;
+    -webkit-perspective: 1px;
+    perspective: 1px;
+    perspective-origin-x: 100%;
     overflow-x: hidden;
 }
 
@@ -15,8 +16,9 @@ body {
     top: -100vh;
     left: 0;
     background-image: url(../img/paper1.jpg);
-    -webkit-transform: translateZ(-300px) scale(2);
-            transform: translateZ(-300px) scale(2);
+    -webkit-transform: translateZ(-1px) scale(2);
+            transform: translateZ(-1px) scale(2);
+    transform-origin-x: 100%;
 }
 
 header {
@@ -146,6 +148,7 @@ main {
     -o-border-image: url(../img/postcardBorder.png) 38 round;
     border-image: url(../img/postcardBorder.png) 38 round;
     box-shadow: 10px 10px 50px 5px rgba(0, 0, 0, 0.5);
+    border-style: solid;
 }
 
 @media only screen and (max-width: 1100px){
