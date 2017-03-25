@@ -1,0 +1,521 @@
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  background-color: #a8bbd2;
+  background-repeat: repeat-y;
+  background-image: url(../img/backing.png), url(../img/backingr.png);
+  background-size: 400px;
+  background-position: top left, top right;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+header {
+  height: 100vh;
+  text-align: center;
+  background: white url(../img/paper2.jpg) repeat left top;
+  background-size: 150px;
+  color: white;
+  font-size: 3em;
+  font-family: 'Architects Daughter', cursive;
+  font-weight: 300;
+  min-height: 500px;
+  position: relative;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid black;
+  box-shadow: 0 0 10px black;
+}
+
+#logo {
+  height: 70vh;
+  left: 0;
+  margin: 15vh auto;
+  padding: 0;
+}
+
+ul.nav {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  text-shadow: 0 0 10px black;
+}
+
+.nav li {
+  display: inline-block;
+  width: 20%;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 930px) {
+  header {
+    height: auto;
+  }
+  ul.nav {
+    position: relative;
+    margin-top: -5vh;
+  }
+  .nav li {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  header {
+    font-size: 200%;
+  }
+}
+
+#title {
+  position: absolute;
+  top: 30vh;
+  width: 100%;
+  color: white;
+}
+
+#title h1 {
+  font-size: 4em;
+  font-family: 'Calligraffitti', cursive;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 10px black;
+}
+
+#foottop {
+  padding-top: 5px;
+  color: black;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  font-size: 0.6em;
+}
+
+#tsplash2 {
+  color: white;
+  border: 2px solid white;
+  background-color: rgba(0, 30, 60, 0.9);
+  padding: 5px 40px;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 1.3em;
+  transition: all 0.2s ease-in-out;
+}
+
+#tsplash2:hover {
+  background-color: rgba(100, 130, 200, 0.95);
+  box-shadow: 0 0 40px white;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+
+main {
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
+.infocard {
+  width: 900px;
+  min-height: 500px;
+  margin: 120px 50px 0 50px;
+  position: relative;
+  color: #444;
+  font-family: 'Architects Daughter', cursive;
+  border-width: 38px;
+}
+
+.infocard a {
+  display: block;
+  color: black;
+  font-size: 2.5em;
+  border: 1px solid black;
+  text-align: center;
+  margin: 30px 20px;
+  padding: 10px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+}
+
+.infocard a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 5px white;
+  box-shadow: 0 0 15px white;
+  color: white;
+}
+
+.postcard {
+  background-image: url(../img/paper1.jpg);
+  background-repeat: repeat;
+  border-radius: 2px;
+  -o-border-image: url(../img/postcardBorder.png) 38 round;
+  border-image: url(../img/postcardBorder.png) 38 round;
+  /*    box-shadow: 10px 10px 50px 5px rgba(0, 0, 0, 0.5);*/
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.9);
+  border-style: solid;
+}
+
+@media only screen and (max-width: 1100px) {
+  .postcard {
+    margin: 120px 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .postcard {
+    width: 90%;
+    font-size: 0.7em;
+  }
+  .infocard {
+    min-height: 400px;
+  }
+}
+
+#theme {
+  margin-top: 40px;
+  padding: 30px;
+  text-align: center;
+}
+
+#theme p {
+  padding-top: 30px;
+}
+
+#tickets {
+  font-size: 2em;
+  margin: 0 auto;
+  border-top: 2px dashed black;
+  border-bottom: 2px dashed black;
+}
+
+#tickets td {
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+#tickets .small {
+  font-size: 0.6em;
+  padding-left: 50px;
+  padding-right: 5px;
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+#fbbutton {
+  padding: 0;
+  margin: 0 auto 10px auto;
+  border: 0;
+  width: 70px;
+  height: 70px;
+}
+
+#fbbutton:hover {
+  background: none;
+  border: 0;
+}
+
+#fblogo {
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+  display: inline;
+  margin: 0 auto 10px 0;
+}
+
+#fblogo:hover {
+  background-color: white;
+}
+
+.rotateleft {
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+.floatleft {
+  float: left;
+}
+
+.rotateright {
+  -webkit-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+.floatright {
+  float: right;
+}
+
+.pparavion {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.pparadise {
+  position: absolute;
+  top: 10px;
+  right: 200px;
+}
+
+.pwavyline {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 400px;
+  height: 100px;
+}
+
+.plogo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 210px;
+  width: 210px;
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+
+.postcardright {
+  float: right;
+  width: 45%;
+  margin-top: 20%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .pparavion {
+    height: 120px;
+  }
+  .pparadise {
+    height: 120px;
+    right: 150px;
+  }
+  .pwavyline {
+    width: 300px;
+    height: 80px;
+  }
+  .plogo {
+    height: 150px;
+    width: 150px;
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+  .postcardright {
+    margin-top: 15%;
+  }
+}
+
+.postcardright p {
+  padding: 30px 20px 0 20px;
+  margin: 0 50px 0 20px;
+  border-bottom: 1px solid black;
+  font-size: 3.5em;
+}
+
+.postcardleft {
+  float: left;
+  width: 55%;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.postcardleft h1 {
+  font-size: 4em;
+  text-decoration: underline;
+}
+
+.postcardleft p {
+  font-size: 2.5em;
+  padding-right: 20px;
+  border-right: 1px solid black;
+}
+
+.postcardtitle {
+  font-size: 5em;
+  width: 40%;
+  min-width: 300px;
+  margin: 0 auto 50px auto;
+  border-width: 15px;
+}
+
+#hoosy {
+/*  float: right;*/
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 20px;
+  max-width: 350px;
+  width: 40%;
+  border: 3px solid white;
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px black;
+}
+
+#hoosy2 {
+  position: absolute;
+  right: 0;
+  top: 300px;
+  margin-right: 20px;
+  max-width: 350px;
+  width: 40%;
+  border: 3px solid white;
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px black;
+  
+}
+
+#sponsorsp {
+  margin-bottom: 100px;
+}
+
+#sponsors {
+  position: relative;
+  font-family: 'Calligraffitti', cursive;
+  clear: both;
+  margin-top: 100px;
+  padding: 50px 0;
+  width: 100%;
+  text-align: center;
+}
+
+#sponsors img {
+  background-image: url(../img/paper1.jpg);
+  border: 3px solid black;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 5px 5px #555;
+}
+
+#imgcontainer {
+  margin: 0 auto;
+  min-height: 400px;
+}
+
+#imgcontainer img {
+  display: inline;
+  vertical-align: middle;
+}
+
+#walters {
+  width: 400px;
+}
+
+#shepherd {
+  width: 240px;
+}
+
+#sponsors table {
+  margin: 30px auto;
+  font-size: 1.5em;
+  border-collapse: collapse;
+}
+
+#sponsors table tr {
+  line-height: 3em;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.tblitem {
+  text-align: right;
+}
+
+.tblcost {
+  padding: 0 30px;
+  font-size: 1.4em;
+  text-shadow: 0 0 10px white;
+}
+
+@media only screen and (max-width: 750px) {
+  .tbldeal {
+    display: none;
+  }
+}
+
+.shinecard {
+  margin: 0 auto;
+  font-size: 2em;
+  clear: both;
+  min-height: 0;
+  border-width: 20px;
+}
+
+.shinecard p {
+  font-size: 1.5em;
+}
+
+.darkcard {
+  background-image: url(../img/paper2.jpg);
+}
+
+#committee {
+  clear: both;
+  padding-top: 150px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Calligraffitti', cursive;
+  position: relative;
+}
+
+.deet {
+  background-image: url(../img/paper2.jpg);
+  display: inline-block;
+  vertical-align: middle;
+  width: 300px;
+  margin: 20px;
+  font-size: 1.8em;
+  border-width: 5px;
+}
+
+.deet h3,
+.deet h2,
+.deet h1 {
+  font-weight: 100;
+}
+
+.deet a {
+  font-weight: 100;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #06D;
+  letter-spacing: -0.05em;
+}
+
+.deet a:hover {
+  text-decoration: underline;
+  text-shadow: 0 0 5px white;
+}
+
+.bridge {
+  display: block;
+  width: 100%;
+  position: relative;
+}
