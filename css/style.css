@@ -100,7 +100,7 @@ ul.nav {
 
 #title {
   position: absolute;
-  top: 30vh;
+  top: 25vh;
   width: 100%;
   color: white;
 }
@@ -110,6 +110,20 @@ ul.nav {
   font-family: 'Calligraffitti', cursive;
   letter-spacing: 0.1em;
   text-shadow: 0 0 10px black;
+  padding-bottom: 2vh;
+}
+
+#titlehighlight {
+  background: rgba(0,0,0,0.7);
+  display: inline-block;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+#title h5 {
+  text-shadow: 0 0 10px black;
+  font-size: 0.8em;
 }
 
 #foottop {
@@ -123,20 +137,21 @@ ul.nav {
 
 #tsplash2 {
   color: white;
-  border: 2px solid white;
+  border: 1px solid white;
   background-color: rgba(0, 30, 60, 0.9);
-  padding: 5px 40px;
+  padding: 2px 20px;
   border-radius: 5px;
   margin-top: 10px;
   display: inline-block;
-  font-size: 1.3em;
+  font-size: 1em;
   transition: all 0.2s ease-in-out;
+  text-decoration: none;
 }
 
 #tsplash2:hover {
   background-color: rgba(100, 130, 200, 0.95);
-  box-shadow: 0 0 40px white;
-  border: 2px solid rgba(0, 0, 0, 0);
+/*  box-shadow: 0 0 10px white;*/
+/*  border: 1px solid rgba(0, 0, 0, 0);*/
 }
 
 main {
@@ -408,24 +423,31 @@ main {
 
 #sponsors img {
   background-image: url(../img/paper1.jpg);
-  border: 3px solid black;
-  padding: 20px;
+  border: 2px solid black;
+  padding: 10px;
   margin: 10px;
   box-shadow: 5px 5px #555;
 }
 
 #imgcontainer {
-  margin: 0 auto;
-  min-height: 400px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
 }
 
-#imgcontainer img {
-  display: inline;
-  vertical-align: middle;
+#imgcontainer div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0 5px;
 }
 
 #walters {
   width: 400px;
+}
+
+#teech {
+  width: 360px;
 }
 
 #shepherd {
