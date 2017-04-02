@@ -480,6 +480,12 @@ main {
   .tbldeal {
     display: none;
   }
+  #imgcontainer {
+    display: inline-block;
+  }
+  #imgcontainer div {
+    display: inline-block;
+  }
 }
 
 .shinecard {
