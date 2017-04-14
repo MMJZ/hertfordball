@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>404 – Hertford Ball</title>
+  <meta charset="UTF-8">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/onthenight.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/icons/manifest.json">
+  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/icons/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="Hertford Ball">
+  <meta name="application-name" content="Hertford Ball">
+  <meta name="msapplication-config" content="/icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <header>
+    <div onclick="taby(false)" id="map">Map</div><div onclick="taby(true)" id="time">Line-up</div>
+  </header>
+  <main onclick="zoom()">
+    <img id="bigimg" src="img/clock.svg">
+  </main>
+  <script>
+    var iszoom = false;
+    var tab = false;
+    function zoom(){
+      iszoom = !iszoom;
+      document.getElementById("bigimg").style.width = iszoom ? "300%" : "100%";
+    }
+    function taby(side){
+      if(side === tab) return;
+      tab = side;
+      document.getElementById("map").style.background = tab ? "rgb(100,200,255)" : "rgb(27,32,40)";
+      document.getElementById("time").style.background = !tab ? "rgb(100,200,255)" : "rgb(27,32,40)";
+      document.getElementById("bigimg").src = tab ? "img/bossjei.png" : "img/clock.svg";
+      if(iszoom) zoom();
+    }
+  </script>
+</body>
+
+</html>
