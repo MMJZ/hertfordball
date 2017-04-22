@@ -2,10 +2,11 @@
 <html>
 
 <head>
-  <title>404 – Hertford Ball</title>
+  <title>on the night</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/onthenight.css">
+  <link rel="stylesheet" href="onthenight.css">
   <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="/icons/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/icons/favicon-16x16.png" sizes="16x16">
@@ -20,26 +21,27 @@
 
 <body>
   <header>
-    <div onclick="taby(false)" id="map">Map</div><div onclick="taby(true)" id="time">Line-up</div>
+    <div onclick="taby(false)" id="time">events
+    </div><div onclick="taby(true)" id="map">map</div>
   </header>
-  <main onclick="zoom()">
-    <img id="bigimg" src="img/clock.svg">
+  <main>
+    <img id="bigimg" src="clock.svg">
   </main>
   <script>
-    var iszoom = false;
     var tab = false;
-    function zoom(){
-      iszoom = !iszoom;
-      document.getElementById("bigimg").style.width = iszoom ? "300%" : "100%";
-    }
-    function taby(side){
-      if(side === tab) return;
+    var bigimg = document.getElementById("bigimg");
+    function taby(side) {
+      if (side === tab) return;
       tab = side;
-      document.getElementById("map").style.background = tab ? "rgb(100,200,255)" : "rgb(27,32,40)";
-      document.getElementById("time").style.background = !tab ? "rgb(100,200,255)" : "rgb(27,32,40)";
-      document.getElementById("bigimg").src = tab ? "img/bossjei.png" : "img/clock.svg";
-      if(iszoom) zoom();
+      bigimg.src = tab ? "map.svg" : "clock.svg";
     }
+	var overlay = document.getElementsByTagName("header")[0];
+	window.addEventListener('scroll', function(e){
+        overlay.style.position = 'absolute';
+        overlay.style.left = window.pageXOffset + 'px';
+        overlay.style.bottom = document.documentElement.clientHeight - (window.pageYOffset + window.innerHeight) + 'px';
+        overlay.style["-webkit-transform"] = "scale(" + window.innerWidth/document.documentElement.clientWidth + ")";
+	});
   </script>
 </body>
 
