@@ -65,3 +65,13 @@ body {
   display: flex;
   flex-direction: row;
 }
+
+
+#hb a {
+  text-decoration: none;
+  color: white;
+}
+
+#hb a:hover {
+  text-decoration: underline;
+}
